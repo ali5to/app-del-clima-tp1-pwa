@@ -32,8 +32,8 @@ button.addEventListener('click', function(){
 
         nameCity.innerHTML = nameValue;
         temp.innerHTML = tempValue +'<span>°C</span>';
-        tempMax.innerHTML = 'Temp. Maxima: '+ tempMaxValue+'<span>°C</span>';
-        tempMin.innerHTML = 'Temp. Minima: '+ tempMinValue+'<span>°C</span>';
+        tempMax.innerHTML = 'Temp. Máxima: '+ tempMaxValue+'<span>°C</span>';
+        tempMin.innerHTML = 'Temp. Mínima: '+ tempMinValue+'<span>°C</span>';
         desc.innerHTML = descValue;
         iconWeather.innerHTML = '<img src="http://openweathermap.org/img/wn/'+iconValue+'@2x.png"' + ' alt="' + descValue +'">';
 
