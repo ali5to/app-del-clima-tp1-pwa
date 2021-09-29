@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ali Garcia, Cátedra PWA</title>
+        <meta charset="UTF-8">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+
+    </head>
+    <body>
+        <main class="container-fluid">
+            <div class="row justify-content-center">
+                <section class="container-fluid mt-5">
+                    <div class="box-input row justify-content-center align-items-center">
+                        <h1 class="col-12 col-md-8 fw-700">Enterate del Clima Actual</h1>
+                        <label class="col-12 col-md-8" for="ciudad">Escribí el nombre de la ciudad de la cual querés saber el clima:</label>
+                        <input class="col-12 col-md-8 inputValue" type="text" name="ciudad" placeholder="Buenos Aires">
+                        <input type="submit" value="BUSCAR" class="button">
+                    </div>
+                </section>
+
+                <section class="container mt-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="div-principal">
+                            
+                                <h2 class="nameCity d-inline-block"></h2>
+                                <p class="temp d-inline-block"></p>
+                                <div class="iconWeather d-inline-block"></div>
+                                <p class="desc d-inline-block"></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center">
+                            <p class="d-inline-block sensaTerm"></p>
+                            <p class="d-inline-block ml-50 tempMax"></p>
+                            <p class="d-inline-block ml-50 tempMin"></p>
+                            <p class="d-inline-block ml-50 humedad"></p>
+                            <p class="d-inline-block ml-50 presionAt"></p>
+                            <p class="d-inline-block ml-50 velocidadViento"></p>
+                    </div>
+                
+                </section>
+            </div>
+        </main>
+
+
+            
+
+       
+            
+        <script src="main.js"></script>  
+    </body>
+</html>
