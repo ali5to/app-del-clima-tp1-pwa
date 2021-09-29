@@ -55,56 +55,55 @@
 
 body {
  font-family: 'Poppins Regular';
- background: rgb(255,220,240);
-background: linear-gradient(313deg, rgba(255,220,240,1) 0%, rgba(146,207,255,1) 100%);
+ background: rgb(146,207,255);
+ background: linear-gradient(121deg, rgba(146,207,255,1) 7%, rgba(255,220,240,1) 71%, rgba(26,255,0,0.40379901960784315) 71%);
 background-repeat: no-repeat;
 background-size: cover;
 min-height: 100vh;
 color: #343434;
-}
-main {
-    padding-top: 100px;
+padding-top: 50px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 24px;
     color: white;
+    text-align: center;
 }
 
 .inputValue {
     border-radius: 100px;
-    padding: 22px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 14px;
     border: none;
     outline: none;
-    padding-left: 30px;
+    padding-left: 20px;
 
     
 }
 
 .button {
     border-radius: 100px;
-    padding: 15px 60px;
-    font-size: 18px;
+    padding: 10px 30px;
+    font-size: 14px;
     font-weight: 700;
     color: white;
     background-color: #ff7d0a;
-    margin-left: -198px;
-    z-index: 2000;
     border: none;
+    margin-top: 5px;
+    width: 60%;
 }
 
 .nameCity, .temp {
-    font-size: 40px;
+    font-size: 24px;
     color: white;
 }
 
 .nameCity {
-    margin-right: 20px;
     background-color: white;
     border-radius: 100px;
     color: #ff7d0a;
     padding: 10px 20px;
+    margin-right: 20px;
 }
 
 p.desc {
@@ -134,10 +133,66 @@ p.desc::first-letter {
     border-radius: 100px;
 }
 
-.sensaTerm {
-    padding: 25px 0px;
+.details {
+    background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  padding: 20px;
+  padding-top: 35px;
+  margin-top: 40px;
+  border-radius: 10px;
 }
+
 
 span {
     color: #ff7d0a;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 40px;
+        text-align: start;
+    }
+
+    body {
+        padding-top: 100px;
+    }
+
+    .inputValue {
+        border-radius: 100px;
+        padding: 22px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        padding-left: 30px;
+    
+        
+    }
+
+    .button {
+        border-radius: 100px;
+        padding: 15px 60px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        background-color: #ff7d0a;
+        margin-left: -198px;
+        z-index: 2000;
+        border: none;
+        margin-top: 0px;
+        width: auto;
+    }
+
+    .nameCity, .temp {
+        font-size: 40px;
+        color: white;
+    }
+    
+    .nameCity {
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 100px;
+        color: #ff7d0a;
+        padding: 10px 20px;
+    }
 }

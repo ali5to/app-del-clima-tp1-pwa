@@ -49,5 +49,5 @@ button.addEventListener('click', function(){
     })
 
 
-    .catch(err => alert("Wrong city name!"))
+    .catch(err => alert("Por favor escribe correctamente el nombre de la ciudad en el buscador :)"))
 })
