@@ -161,6 +161,12 @@ const changeWithIcon = (iconValue) => {
             
     }
 
+    else if (iconValue == '01d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/EXxz5oObhFE?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
 
     else if (iconValue == '03n'){
 
