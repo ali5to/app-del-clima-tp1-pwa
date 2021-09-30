@@ -23,6 +23,7 @@ button.addEventListener('click', function(){
         let tempMinValue = data['main']['temp_min'];
         let descValue = data['weather'][0]['description'];
         let iconValue = data['weather'][0]['icon'];
+        console.log(iconValue);
 
 
         let sensaTermValue = data['main']['feels_like'];
@@ -46,8 +47,139 @@ button.addEventListener('click', function(){
         console.log(humedad)
         console.log(presionAt)
         console.log(sensaTerm)
+        
+        changePalette(iconValue)
+        changeWithIcon(iconValue)
     })
-
+    
 
     .catch(err => alert("Por favor escribe correctamente el nombre de la ciudad en el buscador :)"))
 })
+
+
+const changeWithIcon = (iconValue) => {
+    console.log(iconValue);
+    const videoWeather = document.querySelector('.videoWeather');
+
+    if (iconValue == '04n'){
+
+    videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/orlW2HR0swc?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+    
+
+    } else if (iconValue == '04d'){
+
+    videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Stcqv4XZ5Qk?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+        
+
+
+    } else if (iconValue == '02d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/rApFbTBKnnU?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '03d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/VcVhG3Kwm9g?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '09d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/6IWZCDVoYWo?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '09n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/6IWZCDVoYWo?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '10n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/6IWZCDVoYWo?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '10d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/fB1nZX_Mr80?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '11d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/AsD5u6k6dKI?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '11n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/AsD5u6k6dKI?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '13d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/hU_pIFsq-VM?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '13n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/OC0cVvZVEL4?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '50d'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/AkR6V3S2zcM?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '50n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/AkR6V3S2zcM?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '02n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/3v0kXidBvmM?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+    else if (iconValue == '01n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAd55BQsJLM?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+    else if (iconValue == '03n'){
+
+        videoWeather.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/0kunFcVq0KE?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive embed-responsive-16by9"></iframe>';
+            
+    }
+
+
+}
+
+const changePalette = (iconValue) => {
+
+    const body = document.getElementById("body");
+    console.log(iconValue);
+    if (iconValue == '01n' || '02n' || '03n' || '04n' || '09n' || '10n' || '11n' || '13n' || '50n'){
+        body.classList.add ("noche");
+    } else {
+        body.classList.add ("dia");
+    }
+
+    console.log("Al menos leo la funcion changePalette")
+}
