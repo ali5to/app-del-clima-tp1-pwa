@@ -1,1 +1,7 @@
 # app-del-clima-tp1-pwa
+
+Alumno: ALI ARTURO GARCIA PEREZ
+
+COMISION A TURNO NOCHE
+
+CAMINO "A"
