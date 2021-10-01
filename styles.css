@@ -1,3 +1,7 @@
+/*====== PALETA DE COLORES===========*/
+/*https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 
+    https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff*/
+
 @font-face {
     font-family: Poppins Regular;
     src: url(fonts/Poppins-Regular-400.ttf);
@@ -55,8 +59,8 @@
 
 body {
  font-family: 'Poppins Regular';
- background: rgb(146,207,255);
- background: linear-gradient(121deg, rgba(146,207,255,1) 7%, rgba(255,220,240,1) 71%, rgba(26,255,0,0.40379901960784315) 71%);
+ background: rgb(168,218,220);
+background: linear-gradient(166deg, rgba(168,218,220,1) 25%, rgba(241,250,238,1) 100%);
 background-repeat: no-repeat;
 background-size: cover;
 min-height: 100vh;
@@ -65,15 +69,22 @@ padding-top: 50px;
 }
 
 body.noche {
-    background: rgb(19, 35, 87);
+    background: rgb(29,53,87);
+background: linear-gradient(166deg, rgba(29,53,87,1) 0%, rgba(69,123,157,1) 67%);
     transition: ease-in-out 0.3s;
 }
 
+
 h1 {
-    font-size: 24px;
-    color: white;
+    font-size: 20px;
+    color: #1d3557;
     text-align: center;
 }
+
+.noche h1 {
+    color: #fca311;
+}
+
 
 .inputValue {
     border-radius: 100px;
@@ -86,45 +97,66 @@ h1 {
     
 }
 
+
 .button {
     border-radius: 100px;
-    padding: 10px 30px;
+    padding: 5px 10px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
-    background-color: #ff7d0a;
+    background-color: #e63946;
+    margin-left: -82px;
+    z-index: 2000;
     border: none;
-    margin-top: 5px;
-    width: 60%;
+    margin-top: 0px;
+    width: auto;
 }
 
-.nameCity, .temp {
-    font-size: 24px;
+.noche .button {
+    background-color: #fca311;
+}
+
+
+.temp {
+    font-size: 70px;
+    color: #1d3557;
+    line-height: 100px;
+    margin-bottom: 0px !important;
+    margin-block-end: 0px !important;
+}
+
+.noche .temp {
     color: white;
 }
 
 .nameCity {
+    font-size: 40px;
     background-color: white;
     border-radius: 100px;
-    color: #ff7d0a;
+    color: #e63946;
     padding: 10px 20px;
     margin-right: 20px;
 }
 
-p.desc {
-    color: #ff7d0a;
-    margin-bottom: 0px !important;
+.noche .nameCity {
+    color: #fca311;
 }
+
+p.desc {
+    color: #e63946;
+    margin-bottom: 0px !important;
+    margin-left: 10px;
+}
+
+.noche p.desc {
+    color: #fca311;
+}
+
 
 p.desc::first-letter {
     text-transform: uppercase;
 }
 
-.temp {
-    line-height: 100px;
-    margin-bottom: 0px !important;
-    margin-block-end: 0px !important;
-}
 
 .iconWeather img {
     margin-top: -1em;
@@ -139,22 +171,32 @@ p.desc::first-letter {
 }
 
 .details {
-    background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+background-color: white;
   padding: 20px;
   padding-top: 35px;
   margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 10px;
+}
+
+.noche .details {
+    background-color: #1d3557;
+    color: white;
 }
 
 
 span {
-    color: #ff7d0a;
+    color: #e63946;
+}
+
+.noche span {
+    color: #fca311;
 }
 
 .videoWeather iframe {
-    border-radius: 50px;
+    border-radius: 1000px;
     display: block;
+    margin-top: 20px;
 }
 
 
@@ -185,7 +227,7 @@ span {
         font-size: 18px;
         font-weight: 700;
         color: white;
-        background-color: #ff7d0a;
+        background-color: #e63946;
         margin-left: -198px;
         z-index: 2000;
         border: none;
@@ -193,16 +235,28 @@ span {
         width: auto;
     }
 
-    .nameCity, .temp {
-        font-size: 40px;
-        color: white;
+        .temp {
+        font-size: 70px;
+        margin: 0px 10px;
     }
     
-    .nameCity {
+.nameCity {
         margin-right: 20px;
         background-color: white;
         border-radius: 100px;
-        color: #ff7d0a;
+        color: #e63946;
         padding: 10px 20px;
+        font-size: 40px;
     }
+
+    .videoWeather iframe {
+        border-radius: 1000px;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+
+iframe::-webkit-media-controls-fullscreen-button, iframe::-webkit-media-controls-play-button, iframe::-webkit-media-controls-pausebutton {
+        display: none;
 }
